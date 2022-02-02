@@ -1,10 +1,16 @@
 const app = Vue.createApp({
   data: () => ({
-
+    newItem: "",
+    todos:[]
   }),
   methods:{
     addItem:function(event){
-      console.log("Click")
+      console.log("Click");
+      let todo = {
+        item: this.newItem
+      }
+      this.todos.push(todo);
+      this.newItem = ""
     }
   }
 }).mount("#app")
