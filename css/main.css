@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.app ul{
+  list-style: none;
+}
+
+.app li > .done{
+  text-decoration: line-through;
+}
